@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Reality</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0a1a;
+      color: #fff;
+    }
+
+    /* HEADER */
+    header {
+      background: #111;
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #00ccff;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #00ccff;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: #00ccff; }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #0a0a1a, #0d0d2b);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      color: #00ccff;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00ccff;
+      color: #000;
+      padding: 12px 32px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: #00aadd; }
+
+    /* ABOUT */
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .about img {
+      width: 220px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .about h3 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #00ccff;
+    }
+
+    .about p {
+      color: #bbb;
+      line-height: 1.8;
+    }
+
+    /* FEATURES */
+    .features {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      color: #00ccff;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 30px 24px;
+      width: 220px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: #00ccff;
+      transform: translateY(-4px);
+    }
+
+    .card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 14px;
+    }
+
+    .card h4 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.88rem;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    /* DEVICES */
+    .devices {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .devices h3 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      color: #00ccff;
+    }
+
+    .device-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .device {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px 28px;
+      min-width: 160px;
+    }
+
+    .device .icon { font-size: 2rem; margin-bottom: 8px; }
+    .device p { color: #bbb; font-size: 0.9rem; }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      border-top: 1px solid #333;
+      text-align: center;
+      padding: 24px;
+      color: #555;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>VR World</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#devices">Devices</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Welcome to Virtual Reality</h2>
+    <p>Step into a new dimension. Virtual Reality lets you explore, create, and experience worlds beyond imagination.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80" alt="VR headset" />
+    <div>
+      <h3>What is Virtual Reality?</h3>
+      <p>Virtual Reality (VR) is a technology that creates a simulated environment, placing you inside a fully immersive digital world. Using a VR headset, you can look around, move, and interact as if you were really there. From gaming and education to healthcare and training — VR is changing how we experience the world.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <h3>Key Features</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="icon"><img src="./world-svgrepo-com.svg" alt="world" width="40"></div>
+        <h4>Immersive Worlds</h4>
+        <p>Explore realistic 3D environments that feel completely real.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="./vr-glasses-svgrepo-com.svg" alt="vr" width="40"></div>
+        <h4>Interactive</h4>
+        <p>Use controllers to touch, grab, and interact with objects.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="./medical-kit-svgrepo-com.svg" alt="medic" width="40"></div>
+        <h4>Medical Use</h4>
+        <p>VR is used for surgery training, therapy, and pain management.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="./study-university-svgrepo-com.svg" alt="study" width="40"></div>
+        <h4>Education</h4>
+        <p>Travel through history or explore the human body in class.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVICES -->
+  <section class="devices" id="devices">
+    <h3>Popular VR Devices</h3>
+    <div class="device-list">
+      <div class="device"><p>Meta Quest 3</p></div>
+      <div class="device"><p>PlayStation VR2</p></div>
+      <div class="device"><p>HTC Vive</p></div>
+      <div class="device"><p>Apple Vision Pro</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 VR World — All rights reserved</p>
+  </footer>
+
+</body>
+</html>
