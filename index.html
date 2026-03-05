@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            margin: 10px 0;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Reality</title>
+  <link rel="stylesheet" href="style.css">
+  <style >
+   
 
-        }
-        .button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1em 2em;
-            text-decoration: none;
-            border-radius: 4px;
-        }
- 
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-        }
-        .about-me {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-        }
-            .text-about-me {
-                font-size: 1.2em;
-                margin: 20px 0;
-            }
-    </style>
+    
+  </style>
 </head>
 <body>
 
-<header>
-        <h1>This is Serhii Page</h1>
-        <p>Welcome to Serhii webpage</p>
-        <h2>Webpage list</h2>
-        <h3>Serhii hobbies</h3>
-</header>
-   <div class="about-me">
-     <p class="text-about-me">Hi my name is Serhii. I am interested in technology and programming. I like learning new things and creating websites. In my free time, I enjoy playing games and exploring new software. I also like improving my skills and working on personal projects.</p>
-     <img src="https://media.licdn.com/dms/image/v2/D4D03AQEUxsRr9BiPlQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1710342471635?e=1773878400&v=beta&t=zY1jBkZgQo4jwruWwHSt4UxsFNhwSsvUbx4yJ282V-c" alt="photo serhii">
-   </div>
-    <ol type ="I">
-        <li>Traveling</li>
-        <li>Play video games</li>
-        <li>Play board game</li><br>
-    </ol>
-    <table border="1"  cellpadding="10" cellspacing="0">
-        <tr>
-                <th>Traveling<img src="./travel-suitcase-svgrepo-com.svg" alt="bag"width="50" height="50"></th> 
-                
+  <!-- HEADER -->
+  <header>
+    <h1><a href="./index.html" style="text-decoration: none; color: inherit;">VR World</a></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#devices">Devices</a>
+    </nav>
+  </header>
 
-        
-                <th>Play video games<img src="./game-controller-round-799-svgrepo-com.svg" alt="gamepad"width="50" height="50"></th>
-                
-        
-        
-                <th>Play board game<img src="./game-board-svgrepo-com.svg" alt="board game"width="50" height="50"></th>
+  <section class="hero">
+    <h2>Welcome to Virtual Reality</h2>
+    <p>Step into a new dimension. Virtual Reality lets you explore, create, and experience worlds beyond imagination.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
 
-                    
+
+  <section class="about" id="about">
+    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&q=80" alt="VR headset" />
+    <div>
+      <h3>What is Virtual Reality?</h3>
+      <p>Virtual Reality (VR) is a technology that creates a simulated environment, placing you inside a fully immersive digital world. Using a VR headset, you can look around, move, and interact as if you were really there. From gaming and education to healthcare and training — VR is changing how we experience the world.</p>
+    </div>
+  </section>
+
+
+  <section class="features" id="features">
+    <h3>Key Features</h3>
+    <div class="cards">
+      <div class="card">
+        <svg class="icon" width="40" height="40">
+          <use href="./Images/symbol-defs.svg#world"></use>
+          </svg>
+        <h4>Immersive Worlds</h4>
+        <p>Explore realistic 3D environments that feel completely real.</p>
+      </div>
+      <div class="card">
+        <svg class="icon"width="40" height="40">
+          <use href="./Images/symbol-defs.svg#vr-glasses"></use>
+          </svg>
+        <h4>Interactive</h4>
+        <p>Use controllers to touch, grab, and interact with objects.</p>
+      </div>
+      <div class="card">
+         <svg class="icon"width="40" height="40" style="filter: brightness(0) invert(1)">
+          <use href="./Images/symbol-defs.svg#medical"></use>
+          </svg>
+        <h4>Medical Use</h4>
+        <p>VR is used for surgery training, therapy, and pain management.</p>
+      </div>
+      <div class="card">
+      
+       <svg class="icon"width="40" height="40">
+          <use href="./Images/symbol-defs.svg#study"></use>
+          </svg>
         
-        </tr>
-        <tr>
-            <td>I like to travel to new places and explore different cultures. I enjoy visiting historical sites, trying local cuisine, and experiencing new environments.</td>
-            <td>I enjoy playing video games as a way to relax and have fun. I like a variety of genres, including action, adventure, and strategy games.</td>
-            <td>Playing board games is a great way to spend time with friends and family. I enjoy games that require strategy and teamwork, as well as those that are just for fun.</td>
-        </tr>
-    </table><br><br><br>
-<a href="https://www.linkedin.com/feed/"class= "button">My linkedin</a>
+        <h4>Education</h4>
+        <p>Travel through history or explore the human body in class.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="devices" id="devices">
+    <h3>Popular VR Devices</h3>
+    <div class="device-list">
+  <a href="quest.html" class="device"><p>Meta Quest 3</p></a>
+  <a href="playstation.html" class="device"><p>PlayStation VR2</p></a>
+  <a href="vive.html" class="device"><p>HTC Vive</p></a>
+  <a href="vision.html" class="device"><p>Apple Vision Pro</p></a>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
 
 </body>
 </html>
